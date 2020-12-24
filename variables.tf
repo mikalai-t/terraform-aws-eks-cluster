@@ -176,7 +176,7 @@ variable "cluster_encryption_config_kms_key_policy" {
 }
 
 variable "cluster_encryption_config_resources" {
-  type        = list
+  type        = list(string)
   default     = ["secrets"]
   description = "Cluster Encryption Config Resources to encrypt, e.g. ['secrets']"
 }
